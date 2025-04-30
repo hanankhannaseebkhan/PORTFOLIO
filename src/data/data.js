@@ -1,42 +1,43 @@
 import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaMobile, FaTasks, FaCloud, FaReact,FaBook  } from "react-icons/fa";
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon:<FaReact/>,
+    title: "Web Development",
+    des: "HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB.I develop full-stack web applications with the MERN stack and real-time apps with authentication using WebSockets, Socket.io, and JWT.",
   },
   {
     id: 2,
-    icon: <AiFillAppstore />,
+    icon: <FaMobile />,
     title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    des: "Java, Firebase, Android Studio",
   },
   {
     id: 3,
-    icon: <SiProgress />,
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    // icon: <SiProgress />,
+    icon: <FaCloud  />,
+    title: "Deployment & Devops",
+    des: "AWS (EC2, S3, IAM), Docker, Containerization, Virtualization, Github Actions, Basic Linux Shell, CI/CD pipeline",
   },
   {
     id: 4,
-    icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <AiFillAppstore />,
+    title: "Data Science & Machine Learning",
+    des: "Python, scikit-learn, NumPy, Matplotlib, Data Preprocessing, ML Algorithms, SVM, Data Visualization",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaTasks />,
+    title: "Testing & Quality Assurance",
+    des: "Cypress, Manual Testing, Debugging, Error Handling",
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaBook   />,
+    title: "Software Engineering Practices",
+    des: "SDLC, Agile, WBS, Critical Path Analysis, Function Point Analysis, JIRA, Project Management Tools, Scrum, Kanban",
   },
 ];
