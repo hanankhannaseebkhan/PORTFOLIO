@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectfour, projectfive, projectsix, } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -38,19 +38,19 @@ const Projects = () => {
           title="Hanan Blog"
           des=" HTML, CSS, JavaScript, React, Firebase
                 A blogging platform where users can perform CRUD operations (Create, Read, Update, Delete) on blog posts. Data is stored and managed using Firebase in real time."
-          src={projectThree}
+          src={projectfour}
         />
         <ProjectsCard
           title="Chat Application"
           des=" HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, WebSockets, Socket.io, JWT
                 A real-time chat app built with the MERN stack and Socket.io for instant messaging. Features include JWT-based authentication, private/group chat rooms, and message history stored in MongoDB."
-          src={projectOne}
+          src={projectfive}
         />
         <ProjectsCard
           title="Hostel Hub"
           des="  MongoDB, Express.js, React, Node.js, JWT, Firebase
                  A MERN stack-based hostel management system for room booking, resident management, and booking history. Features include JWT authentication, real-time updates with Firebase, and a responsive admin panel."
-          src={projectTwo}
+          src={projectsix}
         />
       </div>
     </section>
