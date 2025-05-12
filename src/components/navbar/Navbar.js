@@ -2,18 +2,20 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
+
+import { logo } from "../../assets/index"
 import { navLinksdata } from '../../constants';
 
 const Navbar = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false)
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
         {/* <img src={logo} alt="logo" /> */}
         <h1 style={{ paddingLeft: '4rem', fontFamily: 'cursive' }}>HANAN KHAN</h1>
-        </div>
+      </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
@@ -46,9 +48,7 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -76,15 +76,26 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
+                  <a
+                    href="https://www.linkedin.com/in/hanan-khan-164648334"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="bannerIcon">
+                      <FaLinkedinIn />
+                    </span>
+                  </a>
+
+                  <a
+                    href="https://github.com/hanankhannaseebkhan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="bannerIcon">
+                      <BsGithub />
+                    </span>
+                  </a>
+
                 </div>
               </div>
               <span

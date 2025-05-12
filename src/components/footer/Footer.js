@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
+
 
 const Footer = () => {
   return (
@@ -7,15 +9,26 @@ const Footer = () => {
       <div className="w-full h-full flex flex-col gap-8">
         <h1 style={{ paddingLeft: '4rem', fontFamily: 'cursive' }}>HANAN KHAN</h1>
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+          <a
+            href="https://www.linkedin.com/in/hanan-khan-164648334"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="bannerIcon">
+              <FaLinkedinIn />
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/hanankhannaseebkhan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="bannerIcon">
+              <BsGithub />
+            </span>
+          </a>
+
         </div>
       </div>
       <div className="w-full h-full">
